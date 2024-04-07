@@ -1,0 +1,34 @@
+17:17:45.208 [main] INFO  - Cleared Location Search bar
+17:17:45.517 [main] INFO  - Window handled to open new window
+17:17:47.904 [main] INFO  - Required Location selected: Pune
+17:17:49.178 [main] INFO  - Required Specialist got selected
+17:17:57.210 [main] INFO  - Clicked on Experience
+17:17:57.482 [main] INFO  - Required Experice for specialist got selected
+17:17:58.012 [main] INFO  - All Filters got selected
+17:17:58.367 [main] INFO  - Required Fee got selected
+17:17:58.729 [main] INFO  - Availability time of Specialist got selected
+17:18:00.656 [main] ERROR - Error selecting availability: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39530735a555f3a50f2d27ab19737e59, clickElement {id=E435B607318D6B27403B6D60409A036E_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2318449\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57816/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (39530735a555f3a50f2d27ab19737e59)] -> xpath: //div[@class='pure-u-4-24'][2]/div/label]
+Session ID: 39530735a555f3a50f2d27ab19737e59
+17:18:00.892 [main] INFO  - Clicked on SortBy
+17:18:01.170 [main] INFO  - Required SortBy got selected
+17:18:02.835 [main] INFO  - Availability of Doctors list Displayed
+17:18:11.175 [main] INFO  - *************Navigated to the surgery list package by clicking on the surgeries link***********
+17:18:12.546 [main] INFO  - Storing all surgeries in a list
+17:18:13.344 [main] INFO  - ^^^^^^^^^^Navigating to the health and wealth Page^^^^^^^^^^^^^
+17:18:20.078 [main] INFO  - Valid name provided: FHKFO
+17:18:23.462 [main] INFO  - Valid organization name provided: GJSEP
+17:18:23.810 [main] INFO  - Valid phone number provided: 8476856530
+17:18:24.127 [main] INFO  - Invalid EmailId provided: InJjr295@.com
+17:18:24.534 [main] INFO  - Reqired Organization got selected
+17:18:24.987 [main] INFO  - User selected interested criteria
+17:18:25.526 [main] INFO  - Schedule button is diabled
+17:18:25.851 [main] INFO  - valid EmailId provided: zytKJ570@gmail.com
+17:18:26.358 [main] INFO  - Validated Schedule button is able
