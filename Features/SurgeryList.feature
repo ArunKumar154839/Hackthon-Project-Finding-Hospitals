@@ -14,4 +14,4 @@ Feature: Extracting Surgery List
     When user Validate Schedule a demo button is disable
     When user give valid MailId
     When user Validate Schedule a demo button is able
-    #Then ThankYou Message is displayed
+    Then ThankYou Message is displayed

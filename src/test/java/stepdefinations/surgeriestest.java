@@ -1,5 +1,7 @@
 package stepdefinations;
 
+import java.io.IOException;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.WebDriver;
@@ -37,9 +39,9 @@ public class surgeriestest  {
 	}
 
 	@When("the user stores all surgeries in a list")
-	public void the_user_stores_all_surgeries_in_a_list() {
+	public void the_user_stores_all_surgeries_in_a_list() throws IOException {
 		log.info("Storing all surgeries in a list");
-	   SP.SurgeryList();
+	   SP.Surgeries();
 	}
 	@When("the user navigate to health and wealth Page")
 	public void the_user_navigate_to_health_and_wealth_page() throws InterruptedException {
@@ -49,7 +51,7 @@ public class surgeriestest  {
 
 	}
 	@When("user give valid name")
-	public void user_give_valid_name() throws InterruptedException {
+	public void user_give_valid_name() throws InterruptedException, IOException {
 		generatedName=RandomStringUtils.randomAlphabetic(5);
 		Name=generatedName.toUpperCase();
 		log.info("Valid name provided: " + Name);
@@ -57,7 +59,7 @@ public class surgeriestest  {
 	}
 
 	@When("user give valid Organization name")
-	public void user_give_valid_organization_name() {
+	public void user_give_valid_organization_name() throws IOException {
 		generatedName=RandomStringUtils.randomAlphabetic(5);
 		Orgname=generatedName.toUpperCase();
 		log.info("Valid organization name provided: " + Orgname);
@@ -65,7 +67,7 @@ public class surgeriestest  {
 	}
 
 	@When("user give Valid PhoneNumber")
-	public void user_give_valid_phone_number() {
+	public void user_give_valid_phone_number() throws IOException {
 		while(true){
 			generatedPhn=RandomStringUtils.randomNumeric(10);
 			 char firstChar = generatedPhn.charAt(0);
@@ -79,7 +81,7 @@ public class surgeriestest  {
 	}
 
 	@When("user give Invalid MailId")
-	public void user_give_invalid_mail_id() {
+	public void user_give_invalid_mail_id() throws IOException {
 		String Str=RandomStringUtils.randomAlphabetic(5);
 		String num=RandomStringUtils.randomNumeric(3);
 		Mail=Str+num+"@.com";
@@ -119,7 +121,7 @@ public class surgeriestest  {
 		SP.ScheduleButtondisable();
 	}
 	@When("user give valid MailId")
-	public void user_give_valid_mail_id() {
+	public void user_give_valid_mail_id() throws IOException {
 		String Str=RandomStringUtils.randomAlphabetic(5);
 		String num=RandomStringUtils.randomNumeric(3);
 		String Mail=Str+num+"@gmail.com";

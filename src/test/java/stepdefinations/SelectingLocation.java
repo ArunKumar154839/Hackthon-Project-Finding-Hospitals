@@ -1,5 +1,6 @@
 package stepdefinations;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -53,7 +54,7 @@ public class SelectingLocation {
 	}
 
 	@When("User Select required Location")
-	public void user_select_required_location() {
+	public void user_select_required_location() throws IOException {
 //		originalwindow=driver.getWindowHandle();
 //		driver.switchTo().newWindow(WindowType.TAB);
 		log.info("Window handled to open new window");
@@ -77,7 +78,7 @@ public class SelectingLocation {
 	}
 
 	@When("Location is Selected and user sholud select Doctors")
-	public void location_is_selected_and_user_sholud_select_doctors() {
+	public void location_is_selected_and_user_sholud_select_doctors() throws IOException {
 		while(true) {
 			//GP=new GooglePage(BaseClass.getDriver());
 			random= GP.randomeNumber();
@@ -95,6 +96,7 @@ public class SelectingLocation {
 			log.error("Error selecting doctors: " + e.getMessage());
 			e.printStackTrace();
 		}
+		GP.cities();
 	}
 	@When("user should navigate to Category page")
 	public void user_should_navigate_to_category_page() {
@@ -122,7 +124,7 @@ public class SelectingLocation {
 	}
 
 	@When("the user clicks on All filters")
-	public void the_user_clicks_on_all_filters() {
+	public void the_user_clicks_on_all_filters() throws InterruptedException {
 		log.info("All Filters got selected");
 	   CP.ClickAllfilters();
 	}
@@ -184,7 +186,7 @@ public class SelectingLocation {
 	    }
 	}
 	@Then("the user capture first  details")
-	public void the_user_capture_first_details() {
+	public void the_user_capture_first_details() throws IOException {
 		log.info("Availability of Doctors list Displayed");
 	    CP.DoctorsList();
 	   // CP.clickSurgery();

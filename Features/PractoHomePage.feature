@@ -14,4 +14,3 @@ Feature: Selecting Location
     And the user selects the Availability filter
     And the user selects one sorting option
     Then the user capture first  details
-   
