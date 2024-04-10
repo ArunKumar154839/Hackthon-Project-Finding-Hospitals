@@ -41,8 +41,8 @@ public class GooglePage extends BasePage{
 	public void cities() throws IOException {
 		for(int i=0; i<Cities.size(); i++) {
 			arr[i]=Cities.get(i).getText();
-			ExcelUtility.write("Sheet1", 0, 0, "Cities");
-			ExcelUtility.write("Sheet1", i+1, 0, arr[i]);
+//			ExcelUtility.write("Sheet1", 0, 0, "Cities");
+//			ExcelUtility.write("Sheet1", i+1, 0, arr[i]);
 			
 		}
 		

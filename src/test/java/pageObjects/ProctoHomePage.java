@@ -39,8 +39,8 @@ public class ProctoHomePage extends BasePage {
 	//Send random city 
 	public void SendingCity(String city) throws IOException {
 		Searchbar.sendKeys(city);
-		ExcelUtility.write("Sheet1", 0, 1, "City");
-		ExcelUtility.write("Sheet1", 1, 1, city);
+		ExcelUtility.write("Sheet1", 0, 0, "City");
+		ExcelUtility.write("Sheet1", 1, 0, city);
 	}
 	
 	//Select required city
@@ -57,8 +57,8 @@ public class ProctoHomePage extends BasePage {
 		String Specialist=Specialists.get(random).getText();
 		Specialists.get(random).click();
 //		try {
-			ExcelUtility.write("Sheet1", 0, 2, "Specialist");
-			ExcelUtility.write("Sheet1", 1, 2, Specialist);
+			ExcelUtility.write("Sheet1", 0, 1, "Specialist");
+			ExcelUtility.write("Sheet1", 1, 1, Specialist);
 //		
 //		}
 //		catch(Exception e) {

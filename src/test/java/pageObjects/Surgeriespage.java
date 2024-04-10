@@ -56,8 +56,8 @@ public class Surgeriespage extends BasePage{
 			String[] arr = new String[SurgeryList.size()];
 			for(int i=0; i<SurgeryList.size(); i++) {
 				arr[i]=SurgeryList.get(i).getText();
-				ExcelUtility.write("Sheet1", 0, 4, "Surgeries");
-				ExcelUtility.write("Sheet1", i+1, 4, arr[i]);
+				ExcelUtility.write("Sheet1", 0, 3, "Surgeries");
+				ExcelUtility.write("Sheet1", i+1, 3, arr[i]);
 				
 			}
 			
@@ -82,30 +82,30 @@ public class Surgeriespage extends BasePage{
 	public void SendName(String name) throws InterruptedException, IOException {
 		Thread.sleep(3000);
 		ValidateName.sendKeys(name);
-		ExcelUtility.write("Sheet1", 0, 5, "CandidateName");
-		ExcelUtility.write("Sheet1", 1, 5, name);
+		ExcelUtility.write("Sheet1", 0, 4, "CandidateName");
+		ExcelUtility.write("Sheet1", 1, 4, name);
 		//System.out.println("Sent name");
 	}
 	
 	//Send OrganizationName
 	public void SendOrgName(String name) throws IOException {
 		ValidateOrgName.sendKeys(name);
-		ExcelUtility.write("Sheet1", 0, 6, "OrganizationName");
-		ExcelUtility.write("Sheet1", 1, 6, name);
+		ExcelUtility.write("Sheet1", 0, 5, "OrganizationName");
+		ExcelUtility.write("Sheet1", 1, 5, name);
 	}
 	
 	//Send Phone number
 	public void SendPhnnum(String phn) throws IOException {
 		ValidateNum.sendKeys(phn);
-		ExcelUtility.write("Sheet1", 0, 7, "PhoneNum");
-		ExcelUtility.write("Sheet1", 1, 7, phn);
+		ExcelUtility.write("Sheet1", 0, 6, "PhoneNum");
+		ExcelUtility.write("Sheet1", 1, 6, phn);
 	}
 	
 	//Send Invalid format MailId
 	public void SendInvalidMail(String mail) throws IOException {
 		ValidateMail.sendKeys(mail);
-		ExcelUtility.write("Sheet1", 0, 8, "InvalidMailId");
-		ExcelUtility.write("Sheet1", 1, 8, mail);
+		ExcelUtility.write("Sheet1", 0, 7, "InvalidMailId");
+		ExcelUtility.write("Sheet1", 1, 7, mail);
 	}
 	
 	//Select required Organization Size
@@ -140,8 +140,8 @@ public class Surgeriespage extends BasePage{
 	public void Sendvalidmail(String MailId) throws IOException {
 		ValidateMail.clear();
 		ValidateMail.sendKeys(MailId);
-		ExcelUtility.write("Sheet1", 0, 9, "ValidMail");
-		ExcelUtility.write("Sheet1", 1, 9, MailId);
+		ExcelUtility.write("Sheet1", 0, 8, "ValidMail");
+		ExcelUtility.write("Sheet1", 1, 8, MailId);
 	}
 	
 	//Check Schedule demo button is able

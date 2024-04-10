@@ -26,7 +26,7 @@ public class CategoryPage extends BasePage {
 	@FindBy(xpath="//div[@class='pure-u-4-24'][2]/div/label")List<WebElement>AvailabilityList;
 	@FindBy(xpath="//span[@data-qa-id='sort_by_selected']")WebElement SortBy;
 	@FindBy(xpath="//ul[@data-qa-id='sort_by_list']/li")List<WebElement> SortByList;
-	@FindBy(xpath="//div[@class='listing-doctor-card']//div[@class='info-section']")List<WebElement>DoctorsList;
+	@FindBy(xpath="//div[@class='listing-doctor-card']//div[@class='info-section']/a")List<WebElement>DoctorsList;
 	@FindBy(xpath="//div[text()='Surgeries']")WebElement Surgery;
 	
 	
@@ -94,8 +94,8 @@ public class CategoryPage extends BasePage {
 			String[] arr = new String[DoctorsList.size()];
 			for(int i=0; i<5; i++) {
 				arr[i]=DoctorsList.get(i).getText();
-				ExcelUtility.write("Sheet1", 0, 3, "Doctors");
-				ExcelUtility.write("Sheet1", i+1, 3, arr[i]);
+				ExcelUtility.write("Sheet1", 0, 2, "Doctors");
+				ExcelUtility.write("Sheet1", i+1, 2, arr[i]);
 				
 			}
 //			for(WebElement doctor : DoctorsList) {
@@ -118,8 +118,8 @@ public class CategoryPage extends BasePage {
 				String[] arr = new String[DoctorsList.size()];
 				for(int i=0; i<DoctorsList.size(); i++) {
 					arr[i]=DoctorsList.get(i).getText();
-					ExcelUtility.write("Sheet1", 0, 3, "Doctors");
-					ExcelUtility.write("Sheet1", i+1, 3, arr[i]);
+					ExcelUtility.write("Sheet1", 0, 2, "Doctors");
+					ExcelUtility.write("Sheet1", i+1, 2, arr[i]);
 			}
 			
 		}
